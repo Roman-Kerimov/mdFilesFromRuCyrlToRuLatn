@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "linguistickit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Roman-Kerimov/LinguisticKit",
+      "state" : {
+        "branch" : "master",
+        "revision" : "bcb6397e03fd8d2f9f6b68caf124664134f1cff5"
+      }
+    }
+  ],
+  "version" : 2
+}
