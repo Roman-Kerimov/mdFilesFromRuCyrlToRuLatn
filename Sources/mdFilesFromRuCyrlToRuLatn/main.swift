@@ -1,6 +1,9 @@
 import Foundation
 import LinguisticKit
 
+let sourceExtension = "md"
+let targetExtension = "ru_Latn.md"
+
 while true {
     guard let line = readLine() else {
         break
@@ -8,7 +11,7 @@ while true {
     
     let mdURL = URL(fileURLWithPath: line, relativeTo: URL(fileURLWithPath: FileManager.default.currentDirectoryPath))
     
-    guard mdURL.pathExtension == "md" else {
+    guard mdURL.pathExtension == sourceExtension, mdURL.absoluteString.hasSuffix(targetExtension) == false else {
         continue
     }
     
